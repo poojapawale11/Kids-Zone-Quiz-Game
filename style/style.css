@@ -1,0 +1,155 @@
+ *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('../bg2.webp') no-repeat center center/cover;
+    background-color: #c5a79d;
+    /* height: 700px; */
+}
+/* navigation Bar */
+#navbar{
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 5%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul li{
+    list-style: none;
+}
+
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Heading */
+ #top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+ }
+ 
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    /* background: url('../bg2.webp') no-repeat center center/cover ; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+/* equation */
+
+.current a::after{
+    content: '_';
+    background-color: white;
+    font-size: 2px;
+    display: block;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 65% 18%;
+}
+
+.equation{
+    font-size: 65px;
+    /* background-color: #ffe9e9; */
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 15%;
+    margin: 10px 0 10px 10px;
+}
+
+.equation h1{
+    display: inline;
+    padding: 20px;
+}
+
+.answer-options{
+    font-size: 67px;
+    margin-right: 10px;
+}
+
+.answer-options h1{
+    cursor: pointer;
+    /* color: whitesmoke; */
+    border-radius: 50px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#option1{
+    background-color: #59de4f;
+    transition: 1s;
+}
+
+#option1:hover{
+    color: #59de4f;
+    background-color: #e3c6b9;
+}
+
+#option2{
+    background-color: #2ab7ca;
+    transition: 1s;
+}
+
+#option2:hover{
+    color: #2ab7ca;
+    background-color: #e3c6b9;
+}
+#option3{
+    background-color: #c9b103;
+    transition: 1s;
+}
+
+#option3:hover{
+    color: #c9b103;
+    background-color: #e3c6b9;
+}
+
+/* Exit button */
+
+/* #exit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.done{
+    padding: 10px 30px;
+} */
